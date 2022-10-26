@@ -1,0 +1,22 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "lab1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleklz89/lab1.1.git"
+  },
+  "keywords": [
+    "labs"
+  ],
+  "author": "aleklz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleklz89/lab1.1/issues"
+  },
+  "homepage": "https://github.com/Aleklz89/lab1.1#readme"
+}
