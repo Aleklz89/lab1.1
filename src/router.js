@@ -1,10 +1,9 @@
-import helpers from './controllers/helpers.js';
-import safeJSON from "./controllers/utiles.js";
-
+import helpers from './controllers/helpers.js'
+import safeJSON from './controllers/utiles.js'
 
 class Router {
   constructor() {
-    this.routes = new Map();
+    this.routes = new Map()
     this.reqHandler = new ReqHandler(this.routes)
     this.get = this.addHandler.bind(this, 'GET')
     this.post = this.addHandler.bind(this, 'POST')
@@ -27,7 +26,6 @@ class Router {
     }
     return route
   }
-
 
   async handle(req, res) {
     await this.reqHandler.handle(req, res)
@@ -143,9 +141,7 @@ class ReqData {
   }
 
   #procesRawRequestData() {
-    return this.#processedContentTypes[this.#currentContentType](
-      this.#rawRequest
-    )
+    return this.#processedContentTypes[this.#currentContentType](this.#rawRequest)
   }
 }
 
