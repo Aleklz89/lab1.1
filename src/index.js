@@ -8,6 +8,7 @@ const index = http.createServer(async (req, res) => {
 
 index.listen(parseInt(process.env.PORT) || 8080)
 
+// eslint-disable-next-line n/handle-callback-err
 index.on('clientError', (err, socket) => {
   socket.end('HTTP/1.1 400 Bad Request\r\n\r\n')
 })
