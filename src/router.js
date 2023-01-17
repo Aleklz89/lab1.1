@@ -69,7 +69,7 @@ class ReqHandler {
     try {
       await handler(...argument)
     } catch (error) {
-      this.#handleError(argument[RES], error)
+      this.#handleError(argument, error)
     }
   }
 
